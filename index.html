@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iNEW Games</title>
+<meta name="description" content="주식회사 아이뉴의 게임 브랜드, iNEW Games.">
+<link rel="icon" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@400;600&display=swap">
+<style>
+  :root {
+    --bg: #f3f7f4;
+    --panel: #ffffff;
+    --ink: #17241e;
+    --muted: #5b6e65;
+    --line: #dbe6e0;
+    --accent: #2e7d5b;
+    --accent-ink: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1613;
+      --panel: #17211d;
+      --ink: #e4ede8;
+      --muted: #93a79d;
+      --line: #263430;
+      --accent: #6cc79c;
+      --accent-ink: #0f1613;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1613;
+    --panel: #17211d;
+    --ink: #e4ede8;
+    --muted: #93a79d;
+    --line: #263430;
+    --accent: #6cc79c;
+    --accent-ink: #0f1613;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: "Noto Sans KR", -apple-system, "Segoe UI", sans-serif;
+    font-size: 16px; line-height: 1.7;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 4.5rem 1rem 3rem; }
+  .brand {
+    font-family: "Gowun Dodum", "Noto Sans KR", sans-serif;
+    font-size: clamp(2rem, 6vw, 2.75rem); letter-spacing: -0.01em;
+    margin: 0; line-height: 1.15;
+  }
+  .brand b { color: var(--accent); font-weight: 400; }
+  .lede { color: var(--muted); margin: .6rem 0 3.5rem; }
+  .label {
+    font-size: .75rem; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .9rem;
+  }
+  .game {
+    display: grid; grid-template-columns: 6.5rem 1fr; gap: 1.25rem; align-items: center;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 1.25rem;
+    padding: 1.25rem;
+  }
+  .game img { width: 6.5rem; height: 6.5rem; border-radius: 1.4rem; display: block; }
+  .game h2 { margin: 0; font-size: 1.2rem; line-height: 1.35; }
+  .game .ko { color: var(--muted); font-size: .9rem; margin: .1rem 0 .55rem; }
+  .game p { margin: 0 0 .9rem; font-size: .95rem; }
+  .links { display: flex; flex-wrap: wrap; gap: .5rem; }
+  .links a {
+    font-size: .875rem; text-decoration: none; padding: .4rem .9rem;
+    border-radius: 999px; border: 1px solid var(--line); color: var(--ink);
+  }
+  .links a.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .links a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  footer {
+    max-width: 44rem; margin: 0 auto; padding: 2rem 1rem 3rem;
+    border-top: 1px solid var(--line); color: var(--muted); font-size: .8rem; line-height: 1.8;
+  }
+  footer a { color: var(--muted); }
+  .nw { white-space: nowrap; }
+  @media (max-width: 30rem) {
+    .game { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1 class="brand">i<b>NEW</b> Games</h1>
+  <p class="lede">주식회사 아이뉴의 게임 브랜드입니다.</p>
+
+  <p class="label">Games</p>
+  <article class="game">
+    <img src="/marimo/icon.png" alt="마리모 아이콘" width="104" height="104">
+    <div>
+      <h2>Marimo: My Moss Pet</h2>
+      <div class="ko">마리모 이끼친구</div>
+      <p>조용한 물속에서 이끼공 마리모를 키우는 힐링 게임.</p>
+      <div class="links">
+        <a class="primary" href="https://inew-corp.github.io/marimo-raising/game/">웹에서 해보기</a>
+        <a href="/marimo/privacy/">개인정보처리방침</a>
+      </div>
+    </div>
+  </article>
+</main>
+<footer>
+  주식회사 아이뉴 (INEW CO., LTD.) · 대표 이재용<br>
+  <span class="nw">사업자등록번호 290-86-00553</span> · <span class="nw">게임제작업 등록 제2026-000028호</span><br>
+  경기도 김포시 김포한강10로133번길 127, 7층 734호<br>
+  문의 <a href="mailto:cs@inew.kr">cs@inew.kr</a>
+</footer>
+</body>
+</html>
